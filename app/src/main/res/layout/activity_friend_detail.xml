@@ -62,10 +62,11 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:textColor="@color/black"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="D+47"
                 app:layout_constraintTop_toTopOf="@id/fg_friend_detail_tv_friend_name"
                 app:layout_constraintBottom_toBottomOf="@id/fg_friend_detail_tv_friend_name"
-                app:layout_constraintEnd_toEndOf="parent"
-                tools:text="D+47"/>
+                app:layout_constraintEnd_toEndOf="parent"/>
 
             <TextView
                 android:id="@+id/fg_friend_detail_tv_content"

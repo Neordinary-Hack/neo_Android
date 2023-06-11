@@ -48,6 +48,8 @@ class FriendAdapter(private val onClick : (Int) -> Unit, private val nicknameLis
             if (position == 1) { // 나이아카의 화분
                 containerView.visibility = View.GONE
                 defaultTextView.visibility = View.VISIBLE
+                binding.itemFgFriendsRvListIvImages.visibility = View.GONE
+                binding.itemFgFriendsRvListTvName.visibility = View.GONE
             } else {
                 containerView.visibility = View.VISIBLE
                 defaultTextView.visibility = View.GONE

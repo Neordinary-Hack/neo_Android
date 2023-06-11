@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_4"
+        android:layout_marginVertical="@dimen/margin_4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 app:cardCornerRadius="13dp"
-                app:cardBackgroundColor="@color/main_yellow"
+                app:cardBackgroundColor="@color/main_blue"
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -54,12 +54,12 @@
 
         <ImageView
             android:id="@+id/item_fg_friends_rv_list_iv_images"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
             android:src="@drawable/ic_plant2_l"
             android:layout_marginBottom="11dp"
-            android:layout_marginEnd="16dp"
             app:layout_constraintBottom_toBottomOf="@id/item_fg_friends_rv_list_cl"
             app:layout_constraintEnd_toEndOf="@id/item_fg_friends_rv_list_cl"/>
 
@@ -78,6 +78,7 @@
             android:fontFamily="@font/pretendard_bold"
             android:src="@drawable/bg_friend_list"
             android:background="@drawable/bg_friend_list"
+            android:visibility="gone"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
